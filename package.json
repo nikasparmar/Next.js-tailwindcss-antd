@@ -1,0 +1,36 @@
+{
+  "name": "tutorial",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "build:antd": "lessc --js public/less/antd-custom.less node_modules/antd/dist/antd.css",
+    "lint": "eslint ./pages/** ./config/** ./lib/** ./api/** -c .eslintrc.js --ext js,jsx",
+    "lint-fix": "eslint ./pages/** ./config/** ./redux/** -c .eslintrc.js --fix --ext js,jsx",
+    "telemetry:disable": "next telemetry disable"
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.5.0",
+    "antd": "^4.9.2",
+    "axios": "^0.21.0",
+    "next": "^10.0.3",
+    "next-cookies": "^2.0.3",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.1.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-jsx-a11y": "^6.4.1",
+    "eslint-plugin-react": "^7.21.5",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "postcss": "^8.2.1",
+    "tailwindcss": "^2.0.1"
+  }
+}
